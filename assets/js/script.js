@@ -28,3 +28,16 @@ $(document).ready(function  () {
     $("#four").text(fourEvent);
     $("#five").text(fiveEvent);
 })
+
+// Using Time Blocks to determine whether the time is past present or future
+const timeBlocks = $(".container .row");
+const callback = function () {
+    const timeBlockTime = $(this).data("time");
+    if (timeBlockTime === currentHour) {
+        $(this).find("textarea").removeClass("past").addClass("present");
+    }
+    if(timeBlockTime > currentHour) {
+        $(this).find("textarea").removeClass("past").addClass("future");
+    }
+};
+timeBlocks.each(callback);

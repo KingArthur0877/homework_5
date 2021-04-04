@@ -41,3 +41,49 @@ const callback = function () {
     }
 };
 timeBlocks.each(callback);
+
+// Event listeners for button press
+$("#nineBtn").click(function () {
+    const nine = document.querySelector("#nine").value;
+    localStorage.setItem("Nine", nine);
+});
+
+$("#tenBtn").click(function () {
+    const ten = document.querySelector("#ten").value;
+    localStorage.setItem("Ten", ten);
+  });
+  
+  $("#elevenBtn").click(function () {
+    const eleven = document.querySelector("#eleven").value;
+    localStorage.setItem("Eleven", eleven);
+  });
+  
+  $("#twelveBtn").click(function () {
+    const twelve = document.querySelector("#twelve").value;
+    localStorage.setItem("Twelve", twelve);
+  });
+  
+  $("#oneBtn").click(function () {
+    const one = document.querySelector("#one").value;
+    localStorage.setItem("One", one);
+  });
+  
+  $("#twoBtn").click(function () {
+    const two = document.querySelector("#two").value;
+    localStorage.setItem("Two", two);
+  });
+  
+  $("#threeBtn").click(function () {
+    const three = document.querySelector("#three").value;
+    localStorage.setItem("Three", three);
+  });
+  
+  $("#fourBtn").click(function () {
+    const four = document.querySelector("#four").value;
+    localStorage.setItem("Four", four);
+  });
+  
+  $("#fiveBtn").click(function () {
+    const five = document.querySelector("#five").value;
+    localStorage.setItem("Five", five);
+  });
